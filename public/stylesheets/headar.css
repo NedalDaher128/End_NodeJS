@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pathway Extreme', cursive;
+}
+
+header {
+    display: flex;
+    position: relative;
+    width: 1100px;
+    height: 80px;
+    padding: 20px 2%;
+    box-sizing: border-box;
+    transition: .5s;
+    justify-content: space-between;
+    z-index: 1000;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #2C2C2C;  
+    
+    
+}
+
+
+h1 ,label , button{
+    font-family: 'Tajawal', sans-serif;
+}
+
+.Nav_link {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.navbar {
+    position: relative;
+    text-decoration: none;
+    color: #333333;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.navbar:before,
+.navbar:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: #18f08b;
+    transition: 0.5s;
+
+}
+
+.navbar:after {
+    left: 0;
+    bottom: -10px;
+}
+
+.navbar:before {
+    right: 0;
+    top: -10px;
+}
+
+.navbar:hover:after,
+.navbar:hover:before {
+    width: 100%;
+}
+
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+

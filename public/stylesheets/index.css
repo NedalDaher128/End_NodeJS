@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pathway Extreme', cursive;
+}
+
+body {
+    display: flex;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 110vh;
+    background-color:#303030;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+    margin: 0 20px;
+    
+}
+
+header {
+    display: flex;
+    position: relative;
+    width: 1100px;
+    height: 80px;
+    padding: 20px 2%;
+    box-sizing: border-box;
+    transition: .5s;
+    justify-content: space-between;
+    z-index: 1000;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #2C2C2C;  
+    
+    
+}
+
+
+
+
+.Nav_link {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.but_login_desine  {
+    height: 50px;
+    width: 130px;
+    border: 2px solid #18f08b ;
+    background-color: transparent;
+    border-radius: 10px;
+    bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+    color: white;
+}
+
+.but_login_desine:hover {
+    background-color: #04543F;
+    border: none;
+    color: white;
+}
+
+.navbar {
+    position: relative;
+    text-decoration: none;
+    color: #333333;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.navbar:before,
+.navbar:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: #18f08b;
+    transition: 0.5s;
+
+}
+
+.navbar:after {
+    left: 0;
+    bottom: -10px;
+}
+
+.navbar:before {
+    right: 0;
+    top: -10px;
+}
+
+.navbar:hover:after,
+.navbar:hover:before {
+    width: 100%;
+}
+
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#icon{
+    display: flex;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 30px;
+}
+#img_api{
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#title{
+    padding: 20px;
+    display: flex;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 100%;
+}
+#content{
+  display: block;
+  max-width: 100%; /* جعل الصورة تحتل أقل مساحة ممكنة داخل العنصر div */
+  height: auto; /* حفظ نسبة العرض إلى الارتفاع للصورة */
+
+}
+.content{
+    display: block;
+    position: relative;
+}
+
+
+#post{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; /* العرض الثابت للعنصر div */
+    justify-content: center;
+    align-items: center;
+
+
+    overflow: hidden; /* تحديد خاصية ال overflow للعنصر div */
+    padding: 30px;
+    margin-bottom: 30px;
+    
+
+}
+.container{
+    position: relative;
+    padding: 30px;
+
+}
+
+#add_post{
+    position: fixed;
+    display: flex;
+    bottom: 20px;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background-color: #5E5E5E;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: 0.5s;
+    left: 89%;
+    font-size: 30px;
+}
+
+#FormInput_add_Post{
+    display: flex;
+    position: fixed;
+    bottom: 30px;
+    left: 27%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C2C2C;
+    width: 600px;
+    height: 490px;
+    border-radius: 20px;
+    color: white;
+    z-index: 100;
+    transition: 0.5s;
+    transform: 0.5s;
+    
+
+}
+#input_title{
+    width: 400px;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+#input_body{
+    width: 400px;
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.Box_Edit{
+    float: right;
+    display: flex;
+    height:40px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Box_Edit button{
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#username{
+    cursor: pointer;
+}
+
+#comment{
+    overflow: auto;
+    height: 500px;
+    width: 600px;
+    border: 2px solid #18f08b;
+    background-color:  #333333  ; ;
+    border-radius: 20px;
+}
+#comment1{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #333333;
+
+}
